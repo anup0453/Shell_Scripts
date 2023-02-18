@@ -1,0 +1,12 @@
+#!/bin/bash
+
+ sudo echo -e 'enter the name of the file : \c'
+ sudo read -r file
+ sudo touch /home/ec2-user/scripts/$file.sh
+ sudo echo '#!/bin/bash' > /home/ec2-user/scripts/$file.sh
+ sudo echo '#purpose : ' >> /home/ec2-user/scripts/$file.sh
+ sudo echo '#Version : ' >> /home/ec2-user/scripts/$file.sh
+ sudo echo '#Creation Date : '  >> /home/ec2-user/scripts/$file.sh
+ sudo echo '#Modified date : ' >> /home/ec2-user/scripts/$file.sh
+ sudo echo '# START #' >> /home/ec2-user/scripts/$file.sh
+ sudo echo '# END #' >> /home/ec2-user/scripts/$file.sh
