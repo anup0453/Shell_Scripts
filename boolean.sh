@@ -25,3 +25,9 @@ echo "Congrats"
 else
 echo "sorry"
 fi
+
+if [ $a -gt 35 -a $b -gt 35 -a $c -gt 35 ]; then
+echo "correct"
+else
+echo "wrong"
+fi
